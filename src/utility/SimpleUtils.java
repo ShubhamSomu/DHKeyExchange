@@ -108,7 +108,7 @@ public class SimpleUtils {
 
     public static String sendClientPubKey(PublicKey publicKey){
         byte[] encodedPublicKey = publicKey.getEncoded();
-        String base64PublicKey = Base64.getEncoder().encodeToString(encodedPublicKey);
+        String base64PublicKey = SimpleUtils.encodeBase64(encodedPublicKey);
         System.out.println("Client Pub Key :- "+base64PublicKey);
         return base64PublicKey;
     }

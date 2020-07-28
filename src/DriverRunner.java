@@ -39,8 +39,8 @@ public class DriverRunner {
         System.out.println("SERVER-DEC CLIENT MSG:- "+ decClientMsg);*/
 
         String encServerMsg = SimpleUtils.encrypt(SERVER_MSG, serverKeyExchange.getAESKey());
-        System.out.println("PLAIN CLIENT MSG:- "+ SERVER_MSG);
-        System.out.println("ENC CLIENT MSG:- "+ encServerMsg);
+        System.out.println("PLAIN SERVER MSG:- "+ SERVER_MSG);
+        System.out.println("ENC SERVER MSG:- "+ encServerMsg);
 
         String decServerMsg = SimpleUtils.decrypt(encServerMsg, clientKeyExchange.getAESKey());
         System.out.println("CLIENT-DEC SERVER MSG:- "+ decServerMsg);

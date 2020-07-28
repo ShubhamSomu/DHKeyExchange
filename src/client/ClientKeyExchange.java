@@ -118,7 +118,7 @@ public class ClientKeyExchange {
     public void initDHKeyAgreement() throws NoSuchAlgorithmException, InvalidKeyException {
         this.privateKey = keyPair.getPrivate();
 
-        keyAgreement = KeyAgreement.getInstance("DH");
+        keyAgreement = KeyAgreement.getInstance("dh");
         keyAgreement.init(privateKey);
     }
 
